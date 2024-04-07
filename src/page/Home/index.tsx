@@ -11,10 +11,10 @@ export default function Home() {
         <button onClick={() => setCount((count) => count + 1)}>加一</button>
       </p>
       <Link to="/article" style={{ marginRight: 30 }}>
-        去 article 页面
+        去 article 页面（缓存）
       </Link>
 
-      <Link to="/about">去 about 页面</Link>
+      <Link to="/about">去 about 页面（不缓存）</Link>
     </div>
   )
 }
