@@ -8,7 +8,6 @@ interface KeepAliveProps extends PropsWithChildren {
   dropByPath?: (path: string) => void
 }
 
-// Omit 是删掉其中的部分属性、Requried 是去掉可选 -?
 type KeepAliveContextType = Omit<Required<KeepAliveProps>, 'children'>
 
 const keepElements: KeepAliveContextType['keepElements'] = {}
